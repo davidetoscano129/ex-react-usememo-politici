@@ -1,12 +1,16 @@
-# React + Vite
+**Premessa**: Stai costruendo una pagina per visualizzare una lista di politici. Tuttavia, vuoi evitare calcoli inutili e ottimizzare la performance del tuo componente. Segui le milestone per migliorare progressivamente il codice.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Milestone 1: Recuperare e visualizzare i dati
 
-Currently, two official plugins are available:
+1. Effettua una chiamata API a
+https://boolean-spec-frontend.vercel.app/freetestapi/politicians
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Salva la risposta in uno stato React (useState).
 
-## Expanding the ESLint configuration
+3. Mostra i politici in una lista di card, visualizzando almeno le seguenti proprietà:
+- Nome (name)
+- Immagine (image)
+- Posizione (position)
+- Breve biografia (biography)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Obiettivo: Caricare e mostrare i politici in un’interfaccia chiara e leggibile.
